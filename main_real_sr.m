@@ -13,6 +13,7 @@ clear
 close all
 clc
 
+addpath(strcat(pwd,'/Source/'))
 addpath(strcat(pwd,'/Data/'))
 %%
 sf = 4; % Scaling factor. 2 or 4
