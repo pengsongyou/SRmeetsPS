@@ -6,6 +6,7 @@ This repository contains the code for our paper [Depth Super-Resolution Meets Un
 * Super-resolution binary mask
 * Low-resolution depth images (1 image is fine, same size as RGB image is also fine)
 * Intrinsic matrix (containing the focal length and principle points of the RGB images)
+* Downsampling matrix (you can aquire with ``getDownsampleMat.m``. The file name should be like ``D_1280_960_2.mat``)
 
 You can refer to the examples in the ``Data`` folder.
 
