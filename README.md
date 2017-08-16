@@ -11,7 +11,7 @@ This repository contains the code for our paper [Depth Super-Resolution Meets Un
 You can refer to the examples in the ``Data`` folder.
 
 ## Requirement
-* MATLAB (tested in R2015b)
+* MATLAB (tested and working in R2015b and later versions)
 * [Optional] [CMG](http://www.cs.cmu.edu/~jkoutis/cmg.html) solver (recommended)
 
 
