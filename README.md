@@ -1,5 +1,8 @@
 # SRmeetsPS
-This repository contains the code for our paper [Depth Super-Resolution Meets Uncalibrated Photometric Stereo](https://arxiv.org/abs/1708.00411).
+
+This repository contains the code for our paper:  
+Songyou Peng, Bjoern Haefner, Yvain Queau and Daniel Cremers, "**[Depth Super-Resolution Meets Uncalibrated Photometric Stereo](https://arxiv.org/abs/1708.00411)**", In IEEE Conference on Computer Vision (ICCV) Workshop, 2017.
+
 
 ## Input
 * Super-resolution RGB images (at least **4** images)
@@ -18,11 +21,11 @@ You can refer to the examples in the ``Data`` folder.
 ## Citation
 If you use this code, please cite our paper:
 ```sh
-@inproceedings{peng2017,
+@inproceedings{peng2017iccvw,
  author =  {Songyou Peng and Bj{\"o}rn H{\"a}fner and Yvain Qu{\'e}au and Daniel Cremers},
  title = {{Depth Super-Resolution Meets Uncalibrated Photometric Stereo}},
  year = {2017},
- booktitle = {ArXiv preprint 1708.00411},
+ booktitle = {IEEE International Conference on Computer Vision (ICCV) Workshop},
 }
 ```
 Contact **Songyou Peng** [:envelope:](mailto:psy920710@gmail.com) for questions, comments and reporting bugs.
