@@ -3,6 +3,7 @@
 This repository contains the code for our paper:  
 Songyou Peng, Bjoern Haefner, Yvain Queau and Daniel Cremers, "**[Depth Super-Resolution Meets Uncalibrated Photometric Stereo](https://arxiv.org/abs/1708.00411)**", In IEEE Conference on Computer Vision (ICCV) Workshop, 2017.
 
+A CUDA version code is also available [here](https://github.com/nihalsid/SRmeetsPS-CUDA).
 
 ## Input
 * Super-resolution RGB images (at least **4** images)
