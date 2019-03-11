@@ -13,14 +13,13 @@ clear
 close all
 clc
 
-addpath(strcat(pwd,'/Source/'))
-addpath(strcat(pwd,'/Data/'))
+addpath(strcat(pwd,'/src/'))
+addpath(strcat(pwd,'/utils/'))
 %%
-sf = 4; % Scaling factor. 2 or 4
-data_name = 'mitten';
+data_path = '~/Downloads/realsense_hat_sf2_ups';
 
-lambda = 1; % when the result is not desirable, tune between 0.1-100
-tol = 5e-3; % Stoping criterion 
+lambda = 0.01; % when the result is not desirable, tune between 1e-3 ~ 1e-1
+tol = 1e-3; % Stoping criterion (modify accordingly)
 max_iter = 10; % Maximum number of iteration
 
 % flag
@@ -29,7 +28,8 @@ apply_smooth_filter = 1; % 1: Guided filter to smooth the input depths (!!! use 
 flag_cmg = 1; % 1: CMG precondition, 0: otherwise (CMG can be downloaded from http://www.cs.cmu.edu/~jkoutis/cmg.html)
 
 %% 
-load(strcat(data_name,sprintf('_sf%d',sf)));
+% load(strcat(data_name,sprintf('_sf%d',sf)));
+load(data_path)
 
-[z, rho, N, iter, T_total] = SRPS(I, z0, mask, K, lambda, fill_missing_z, apply_smooth_filter, tol, max_iter, flag_cmg);
+[z, rho, N, iter, T_total] = SRPS(I_noise, z0_noise, mask_sr, K_sr, lambda, fill_missing_z, apply_smooth_filter, tol, max_iter, flag_cmg);
 
