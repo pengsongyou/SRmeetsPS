@@ -16,7 +16,7 @@ A CUDA version code is also available [here](https://github.com/nihalsid/SRmeets
 * Intrinsic matrix (containing the focal length and principle points of the RGB images)
 * Downsampling matrix (you can aquire with ``getDownsampleMat.m``. The file name should be like ``D_1280_960_2.mat``)
 
-You can refer to the examples in the ``Data`` folder.
+**All the real-world data can be found at [this link](https://vision.in.tum.de/data/datasets/photometricdepthsr).**
 
 ## Requirement
 * MATLAB (tested and working in R2015b and later versions)
